@@ -8,10 +8,14 @@ import Navbar from "./components/Navbar";
 
 import "./styles.scss";
 
+// Imported the useLocalStorage
 import useLocalStorage from './components/Hooks/useLocalStorage';
 
+//
 const App = () => {
   const [coinData, setCoinData] = useState([]);
+
+  // I can use this to see if it works 
   const [local, setLocal] = useLocalStorage('')
 
   useEffect(() => {
